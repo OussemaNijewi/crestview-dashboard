@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import clientData from '@/mock/client.json'
 import { RouterLink } from 'vue-router'
+import LogoCanvas from '@/components/layout/LogoCanvas.vue'
 
 // Get initials from client data and store in a string
 const initials = computed(() => {
@@ -34,7 +35,9 @@ const navItems = [
   <nav class="navbar-wrapper">
     <div class="navbar-pill">
       <!-- 3D Asset Placeholder Container (To be implemented later) -->
-      <div class="aot-3d-container"></div>
+      <div class="aot-3d-container">
+        <LogoCanvas />
+      </div>
 
       <!-- Nav Links -->
       <div class="nav-links">
