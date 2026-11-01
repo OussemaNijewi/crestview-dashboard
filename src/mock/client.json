@@ -1,0 +1,955 @@
+{
+  "clientId": "cibc-client-009281",
+  "tierStatus": "Imperial Service",
+  "personalInfo": {
+    "firstName": "Oussema",
+    "lastName": "Nijewi",
+    "email": "oussema.nijewi@example.com",
+    "phone": "+1 (613) 555-0192",
+    "address": {
+      "street": "81 Bay St.",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M5J 0E7"
+    },
+    "employment": {
+      "category": "Technology & Software",
+      "description": "Software Engineer",
+      "detailedDescription": "Full-Stack Software Development & Embedded Systems"
+    }
+  },
+  "accounts": {
+    "chequing": {
+      "accountNumber": "****4921",
+      "accountName": "CIBC Smart™ Account",
+      "balance": 171.21,
+      "currency": "CAD",
+      "transactions": [
+        {
+          "date": "2026-02-27",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-02-27",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-03-13",
+          "amount": 492.91,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-03-13",
+          "amount": -492.91,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - UNIVERSITY OF OTTAWA -TUI",
+          "category": "Education"
+        },
+        {
+          "date": "2026-03-27",
+          "amount": 655.69,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-03-27",
+          "amount": -655.69,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - UNIVERSITY OF OTTAWA-TUI",
+          "category": "Education"
+        },
+        {
+          "date": "2026-03-31",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-03-31",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-04-10",
+          "amount": 655.68,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-04-10",
+          "amount": -655.68,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - UNIVERSITY OF OTTAWA-TUI",
+          "category": "Education"
+        },
+        {
+          "date": "2026-04-24",
+          "amount": 673.08,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-04-24",
+          "amount": -673.08,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-04-30",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-04-30",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-05-08",
+          "amount": 649.7,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-05-08",
+          "amount": -649.7,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - SCOTIABANK CREDIT CARD",
+          "category": "Debt"
+        },
+        {
+          "date": "2026-05-22",
+          "amount": 649.69,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-05-22",
+          "amount": -649.69,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-05-22",
+          "amount": 13.56,
+          "type": "credit",
+          "description": "E-TRANSFER FAOZY ADEWALE BISSIRIOU",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-05-25",
+          "amount": 11.3,
+          "type": "credit",
+          "description": "E-TRANSFER MOHAMED BOUSTTA",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-05-25",
+          "amount": -24.86,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-05-26",
+          "amount": 251.36,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-05-27",
+          "amount": -251.36,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-05-29",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-05-29",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": 748.41,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": 571.33,
+          "type": "credit",
+          "description": "E-TRANSFER OUSSEMA NIJEWI",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": 266.5,
+          "type": "credit",
+          "description": "E-TRANSFER OUSSEMA NIJEWI",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": -255.0,
+          "type": "debit",
+          "description": "VISA DEBIT RETAIL PURCHASE - IMMIGRATION CAN",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-06-08",
+          "amount": -20.0,
+          "type": "debit",
+          "description": "ATM WITHDRAWAL RIDEAU and SUSSEX",
+          "category": "Cash"
+        },
+        {
+          "date": "2026-06-08",
+          "amount": -820.0,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - AGOS MANAGEMENT",
+          "category": "Housing"
+        },
+        {
+          "date": "2026-06-09",
+          "amount": -11.93,
+          "type": "debit",
+          "description": "VISA DEBIT RETAIL PURCHASE - LYFT",
+          "category": "Transport"
+        },
+        {
+          "date": "2026-06-09",
+          "amount": -10.8,
+          "type": "debit",
+          "description": "RETAIL PURCHASE - METRO",
+          "category": "Groceries"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": -24.72,
+          "type": "debit",
+          "description": "RETAIL PURCHASE - WALMART",
+          "category": "Groceries"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": -13.96,
+          "type": "debit",
+          "description": "VISA DEBIT RETAIL PURCHASE - LYFT",
+          "category": "Transport"
+        },
+        {
+          "date": "2026-06-11",
+          "amount": -11.98,
+          "type": "debit",
+          "description": "VISA DEBIT RETAIL PURCHASE - LYFT",
+          "category": "Transport"
+        },
+        {
+          "date": "2026-06-11",
+          "amount": -81.36,
+          "type": "debit",
+          "description": "RETAIL PURCHASE - SPORT CHEK",
+          "category": "Shopping"
+        },
+        {
+          "date": "2026-06-12",
+          "amount": -336.49,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-17",
+          "amount": 55.93,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-06-18",
+          "amount": -55.93,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-19",
+          "amount": 649.7,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-06-19",
+          "amount": -400.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-22",
+          "amount": -114.69,
+          "type": "debit",
+          "description": "RETAIL PURCHASE - WALMART",
+          "category": "Groceries"
+        },
+        {
+          "date": "2026-06-22",
+          "amount": -123.33,
+          "type": "debit",
+          "description": "E-TRANSFER Faozy",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-22",
+          "amount": -11.68,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-30",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-06-30",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": 1398.55,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": -107.47,
+          "type": "debit",
+          "description": "E-TRANSFER Luke Angel",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": -450.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": -820.0,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - AGOS MANAGEMENT",
+          "category": "Housing"
+        },
+        {
+          "date": "2026-07-14",
+          "amount": 136.3,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-07-14",
+          "amount": -157.38,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-07-17",
+          "amount": 1103.09,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-07-17",
+          "amount": -850.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-07-21",
+          "amount": -23.5,
+          "type": "debit",
+          "description": "ATM WITHDRAWAL",
+          "category": "Cash"
+        },
+        {
+          "date": "2026-07-21",
+          "amount": -2.0,
+          "type": "debit",
+          "description": "NETWORK TRANSACTION FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-07-24",
+          "amount": 2.0,
+          "type": "credit",
+          "description": "NON-CIBC ATM REBATE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-07-31",
+          "amount": 685.27,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-07-31",
+          "amount": -875.0,
+          "type": "debit",
+          "description": "E-TRANSFER Arnaud Boudigou",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-07-31",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-07-31",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-08-06",
+          "amount": 106.89,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-08-11",
+          "amount": -120.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-14",
+          "amount": 1009.69,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-08-14",
+          "amount": -1010.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-14",
+          "amount": -78.2,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-08-14",
+          "amount": -10.0,
+          "type": "debit",
+          "description": "NON-SUFFICIENT FUNDS CHARGE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-08-14",
+          "amount": 78.2,
+          "type": "credit",
+          "description": "EFT DEBIT REVERSAL - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": 49.29,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-08-21",
+          "amount": 13.56,
+          "type": "credit",
+          "description": "E-TRANSFER FAOZY ADEWALE BISSIRIOU",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-21",
+          "amount": 13.56,
+          "type": "credit",
+          "description": "E-TRANSFER MOHAMED BOUSTTA",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-21",
+          "amount": -78.2,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-08-24",
+          "amount": 600.0,
+          "type": "credit",
+          "description": "E-TRANSFER MEHDI HASSOUNE",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-24",
+          "amount": 13.56,
+          "type": "credit",
+          "description": "E-TRANSFER MARTIAL SAKOUE",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-26",
+          "amount": -25.0,
+          "type": "debit",
+          "description": "WITHDRAWAL",
+          "category": "Cash"
+        },
+        {
+          "date": "2026-08-28",
+          "amount": 1063.03,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-08-28",
+          "amount": -875.0,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - TENANTPAY",
+          "category": "Housing"
+        },
+        {
+          "date": "2026-08-28",
+          "amount": -710.0,
+          "type": "debit",
+          "description": "E-TRANSFER Oussema Nijewi",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-08-31",
+          "amount": -4.0,
+          "type": "debit",
+          "description": "WITHDRAWAL",
+          "category": "Cash"
+        },
+        {
+          "date": "2026-08-31",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-08-31",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-09-09",
+          "amount": 58.78,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-09-11",
+          "amount": 1074.15,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-09-11",
+          "amount": -1100.0,
+          "type": "debit",
+          "description": "E-TRANSFER oussema",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-14",
+          "amount": 300.0,
+          "type": "credit",
+          "description": "E-TRANSFER MEHDI HASSOUNE",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-14",
+          "amount": -300.0,
+          "type": "debit",
+          "description": "E-TRANSFER oussema",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-14",
+          "amount": -39.0,
+          "type": "debit",
+          "description": "E-TRANSFER lentz prince",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-18",
+          "amount": -149.42,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-09-18",
+          "amount": 149.42,
+          "type": "credit",
+          "description": "EFT DEBIT REVERSAL - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-09-18",
+          "amount": -10.0,
+          "type": "debit",
+          "description": "NON-SUFFICIENT FUNDS CHARGE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-09-24",
+          "amount": 180.0,
+          "type": "credit",
+          "description": "E-TRANSFER OUSSEMA NIJEWI",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": 966.69,
+          "type": "credit",
+          "description": "PAY CIBC Net Pay",
+          "category": "Income"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": -875.0,
+          "type": "debit",
+          "description": "INTERNET BILL PAY - TENANTPAY",
+          "category": "Housing"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": -300.0,
+          "type": "debit",
+          "description": "E-TRANSFER oussema",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": -149.42,
+          "type": "debit",
+          "description": "PREAUTHORIZED DEBIT - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": 149.42,
+          "type": "credit",
+          "description": "EFT DEBIT REVERSAL - ROGERS WIRELESS",
+          "category": "Bills"
+        },
+        {
+          "date": "2026-09-25",
+          "amount": -10.0,
+          "type": "debit",
+          "description": "NON-SUFFICIENT FUNDS CHARGE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-09-28",
+          "amount": -13.56,
+          "type": "debit",
+          "description": "E-TRANSFER MOHAMEDBOUSTTA",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-28",
+          "amount": -13.56,
+          "type": "debit",
+          "description": "E-TRANSFER FAOZY ADEWALEBISSIRIOU",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-28",
+          "amount": 63.15,
+          "type": "credit",
+          "description": "E-TRANSFER ARNAUD-YVES BOUDIGOU",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-29",
+          "amount": 58.08,
+          "type": "credit",
+          "description": "DEPOSIT Solium Capital",
+          "category": "Investment"
+        },
+        {
+          "date": "2026-09-29",
+          "amount": -16.95,
+          "type": "debit",
+          "description": "SERVICE CHARGE CAPPED MONTHLY FEE",
+          "category": "Fees"
+        },
+        {
+          "date": "2026-09-29",
+          "amount": 16.95,
+          "type": "credit",
+          "description": "SERVICE CHARGE DISCOUNT",
+          "category": "Fees"
+        }
+      ]
+    },
+    "savings": {
+      "accountNumber": "****-8832",
+      "accountName": "CIBC eAdvantage® Savings",
+      "balance": 18450.75,
+      "interestRate": 0.032,
+      "currency": "CAD",
+      "transactions": [
+        {
+          "date": "2026-02-01",
+          "amount": 12500.0,
+          "type": "credit",
+          "description": "Initial Savings Deposit",
+          "category": "Deposit"
+        },
+        {
+          "date": "2026-02-28",
+          "amount": 33.33,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 500.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-03-15",
+          "amount": -1000.0,
+          "type": "debit",
+          "description": "Transfer to Chequing (Tuition Support)",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-03-31",
+          "amount": 32.15,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-04-01",
+          "amount": 500.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-04-30",
+          "amount": 34.2,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-05-01",
+          "amount": 750.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-05-18",
+          "amount": -2500.0,
+          "type": "debit",
+          "description": "Emergency Withdrawal",
+          "category": "Withdrawal"
+        },
+        {
+          "date": "2026-05-31",
+          "amount": 31.05,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": 500.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -500.0,
+          "type": "debit",
+          "description": "Transfer to Chequing",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-06-30",
+          "amount": 29.8,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": 1000.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-07-31",
+          "amount": 35.42,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": 800.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -1500.0,
+          "type": "debit",
+          "description": "ATM / Cash Withdrawal",
+          "category": "Withdrawal"
+        },
+        {
+          "date": "2026-08-31",
+          "amount": 32.5,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        },
+        {
+          "date": "2026-09-01",
+          "amount": 1000.0,
+          "type": "credit",
+          "description": "Automatic Monthly Transfer",
+          "category": "Savings"
+        },
+        {
+          "date": "2026-09-15",
+          "amount": -500.0,
+          "type": "debit",
+          "description": "Transfer to Chequing",
+          "category": "Transfer"
+        },
+        {
+          "date": "2026-09-30",
+          "amount": 38.62,
+          "type": "credit",
+          "description": "Monthly Interest Earned",
+          "category": "Interest"
+        }
+      ]
+    },
+    "registeredAccounts": {
+      "tfsa": {
+        "accountNumber": "****-1102",
+        "balance": 35000.0,
+        "contributionRoomRemaining": 12500.0,
+        "lifetimeLimit": 95000.0
+      },
+      "rrsp": {
+        "accountNumber": "****-3341",
+        "balance": 42000.0,
+        "deductionLimit": 14200.0
+      },
+      "fhsa": {
+        "accountNumber": "****-9920",
+        "balance": 16000.0,
+        "annualContributionLimit": 8000.0
+      }
+    },
+    "mortgage": {
+      "mortgageId": "MTG-7712",
+      "purchasePrice": 650000.0,
+      "downPayment": 130000.0,
+      "principalBalance": 485000.0,
+      "interestRate": 4.59,
+      "rateType": "5-Year Fixed Closed",
+      "amortizationYears": 25,
+      "paymentFrequency": "Bi-weekly",
+      "regularPaymentAmount": 1342.5,
+      "maturityDate": "2029-06-01"
+    },
+    "gics": [
+      {
+        "gicId": "GIC-5501",
+        "principal": 15000.0,
+        "termMonths": 12,
+        "interestRate": 3.75,
+        "maturityDate": "2027-04-15",
+        "paymentOption": "At maturity"
+      }
+    ]
+  }
+}
