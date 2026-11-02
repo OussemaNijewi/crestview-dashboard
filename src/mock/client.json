@@ -713,15 +713,15 @@
         },
         {
           "date": "2026-09-28",
-          "amount": -13.56,
-          "type": "debit",
+          "amount": 13.56,
+          "type": "credit",
           "description": "E-TRANSFER MOHAMEDBOUSTTA",
           "category": "Transfer"
         },
         {
           "date": "2026-09-28",
-          "amount": -13.56,
-          "type": "debit",
+          "amount": 13.56,
+          "type": "credit",
           "description": "E-TRANSFER FAOZY ADEWALEBISSIRIOU",
           "category": "Transfer"
         },
