@@ -3,7 +3,6 @@ import { ref, computed, onMounted, watch } from 'vue'
 import clientData from '@/mock/client.json'
 
 const props = defineProps({
-  // Accepts 'chequing' or 'savings' prop passed by the parent component to determine which account data to pull from client.json
   accountType: {
     type: String,
     required: true,
@@ -13,14 +12,12 @@ const props = defineProps({
 
 const emit = defineEmits(['update:transactions'])
 
-// Active filter state
-const activeFilter = ref('4weeks') // '4weeks', '3months', '6months', '12months', 'all', or 'custom-month'
-const selectedMonth = ref('') // Formatted 'YYYY-MM'
+const activeFilter = ref('4weeks')
+const selectedMonth = ref('')
 
-// Dynamic month list generator from Jan 2025 to Present
 const availableMonths = computed(() => {
   const months = []
-  const startDate = new Date(2025, 0, 1) // Jan 2025
+  const startDate = new Date(2025, 0, 1)
   const currentDate = new Date()
 
   let iter = new Date(startDate)
@@ -31,10 +28,9 @@ const availableMonths = computed(() => {
     months.push({ value: `${year}-${month}`, label })
     iter.setMonth(iter.getMonth() + 1)
   }
-  return months.reverse() // Latest month first
+  return months.reverse()
 })
 
-// Quick Filter Definitions
 const quickFilters = [
   { key: '4weeks', label: 'Last 4 Weeks', days: 28 },
   { key: '3months', label: 'Last 3 Months', days: 90 },
@@ -43,26 +39,38 @@ const quickFilters = [
   { key: 'all', label: 'All Time', days: null },
 ]
 
-// Fetch & Filter Logic
 const filterAndEmitTransactions = () => {
-  // Pull transactions for the specific account type from client.json
   const rawAccount = clientData.accounts[props.accountType] || {}
   const transactions = rawAccount.transactions || []
 
-  let filtered = [...transactions]
+  // STEP 1: Sort the ENTIRE master transaction history oldest-to-newest
+  const sortedMaster = [...transactions].sort((a, b) => new Date(a.date) - new Date(b.date))
+
+  // STEP 2: Calculate absolute historical running balances across the entire timeline
+  let runningBalance = 0
+  const masterWithBalance = sortedMaster.map((tx) => {
+    runningBalance += tx.amount
+    return {
+      ...tx,
+      runningBalance: Number(runningBalance.toFixed(2)),
+    }
+  })
+
+  // STEP 3: Apply filters to the master list that already contains historical balances
+  let filtered = masterWithBalance
 
   if (activeFilter.value === 'custom-month' && selectedMonth.value) {
-    filtered = transactions.filter((tx) => tx.date.startsWith(selectedMonth.value))
+    filtered = masterWithBalance.filter((tx) => tx.date.startsWith(selectedMonth.value))
   } else if (activeFilter.value !== 'all') {
     const selectedFilterObj = quickFilters.find((f) => f.key === activeFilter.value)
     if (selectedFilterObj && selectedFilterObj.days) {
       const now = new Date()
       const cutoffTime = new Date().setDate(now.getDate() - selectedFilterObj.days)
-      filtered = transactions.filter((tx) => new Date(tx.date) >= cutoffTime)
+      filtered = masterWithBalance.filter((tx) => new Date(tx.date) >= cutoffTime)
     }
   }
 
-  // Emit the prepared dataset to be consumed by TransactionTable
+  // STEP 4: Emit the filtered subset
   emit('update:transactions', {
     transactions: filtered,
     initialBalance: rawAccount.balance || 0,
@@ -71,10 +79,9 @@ const filterAndEmitTransactions = () => {
   })
 }
 
-// Event Handlers
 const handleQuickFilterClick = (filterKey) => {
   activeFilter.value = filterKey
-  selectedMonth.value = '' // Reset dropdown selection when quick filter is picked
+  selectedMonth.value = ''
   filterAndEmitTransactions()
 }
 
@@ -86,7 +93,6 @@ const handleMonthSelect = (event) => {
   filterAndEmitTransactions()
 }
 
-// Watch for account type route switches (e.g. switching from Chequing to Savings)
 watch(
   () => props.accountType,
   () => {
@@ -94,7 +100,6 @@ watch(
   },
 )
 
-// Initialize data on mount
 onMounted(() => {
   filterAndEmitTransactions()
 })
