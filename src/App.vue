@@ -1,10 +1,14 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import Navbar from '@/components/layout/Navbar.vue'
+import Sidebar from '@/components/layout/Sidebar.vue'
 </script>
 
 <template>
   <div class="app-layout">
+    <!-- Fixed Collapsible Left Sidebar -->
+    <Sidebar />
+
     <!-- Centered Header Container -->
     <header class="header-container">
       <Navbar />
@@ -20,7 +24,7 @@ import Navbar from '@/components/layout/Navbar.vue'
 <style scoped>
 .app-layout {
   min-height: 100vh;
-  background-color: #f4f6f9;
+  background-color: #ffffff;
   color: #1a1a1a;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   display: flex;
