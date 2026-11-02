@@ -6,18 +6,19 @@ import Sidebar from '@/components/layout/Sidebar.vue'
 
 <template>
   <div class="app-layout">
-    <!-- Fixed Collapsible Left Sidebar -->
+    <!-- Collapsible Left Sidebar -->
     <Sidebar />
 
-    <!-- Centered Header Container -->
-    <header class="header-container">
-      <Navbar />
-    </header>
+    <!-- Main Content Wrapper (Fills remaining screen width dynamically) -->
+    <div class="content-wrapper">
+      <header class="header-container">
+        <Navbar />
+      </header>
 
-    <!-- Dynamic Main Content Area -->
-    <main class="main-content">
-      <RouterView />
-    </main>
+      <main class="main-content">
+        <RouterView />
+      </main>
+    </div>
   </div>
 </template>
 
@@ -28,24 +29,29 @@ import Sidebar from '@/components/layout/Sidebar.vue'
   color: #1a1a1a;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Restricts header width and centers it at the top */
+/* Automatically takes up all remaining width beside the sidebar */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevents wide child components (tables/grids) from overflowing the flex container */
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
 .header-container {
   width: 100%;
-  max-width: 1000px;
   display: flex;
   justify-content: center;
   padding-top: 1rem;
 }
 
-/* Central Page View Container */
 .main-content {
   width: 100%;
-  max-width: 1000px;
-  margin: 1.5rem auto;
-  padding: 0 1rem;
+  flex: 1;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 </style>
