@@ -70,7 +70,7 @@ const navItems = [
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Floating Dark Pill Container */
