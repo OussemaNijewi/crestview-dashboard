@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AccountDetailView from '@/views/AccountDetailView.vue'
+import TFSACalculatorView from '@/views/TFSACalculatorView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,11 @@ const router = createRouter({
       name: 'savings',
       component: AccountDetailView,
       props: { accountType: 'savings' },
+    },
+    {
+      path: '/tfsa-calculator',
+      name: 'tfsa-calculator',
+      component: TFSACalculatorView,
     },
   ],
 })
