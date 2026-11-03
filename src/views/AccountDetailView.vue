@@ -75,7 +75,7 @@ const formatCurrency = (val) => {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   min-height: 100vh;
 }
 
