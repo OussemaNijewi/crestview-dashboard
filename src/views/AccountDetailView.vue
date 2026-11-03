@@ -137,16 +137,17 @@ const formatCurrency = (val) => {
   width: 100%;
 }
 
-/* Dashboard Grid Layout (Table on left, Future Chart on right) */
+/* Dashboard Grid Layout (50-50 Split with independent heights) */
 .dashboard-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  align-items: start; /* Crucial: prevents columns from forcing each other to match heights */
 }
 
 @media (min-width: 1024px) {
   .dashboard-grid {
-    grid-template-columns: 1fr 380px; /* Table takes primary space, chart gets dedicated sidebar */
+    grid-template-columns: 1fr 1fr; /* 50-50 equal width split */
   }
 }
 
@@ -154,9 +155,11 @@ const formatCurrency = (val) => {
   width: 100%;
 }
 
-/* Chart Placeholder Styles */
+/* Chart Column Styles */
 .chart-column {
   width: 100%;
+  position: sticky; /* Keeps the analytics card locked in view while scrolling long tables */
+  top: 1.5rem;
 }
 
 .chart-placeholder-card {
@@ -167,8 +170,7 @@ const formatCurrency = (val) => {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 320px;
+  min-height: 450px; /* Gives the chart card a clean, balanced height */
 }
 
 .chart-header {
@@ -198,7 +200,7 @@ const formatCurrency = (val) => {
   font-size: 0.875rem;
   color: #64748b;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .chart-mockup-visual {
@@ -209,6 +211,7 @@ const formatCurrency = (val) => {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 260px;
 }
 
 .mockup-icon {
