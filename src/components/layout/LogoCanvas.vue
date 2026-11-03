@@ -39,29 +39,27 @@ onMounted(() => {
   directionalLight.position.set(5, 5, 5)
   scene.add(directionalLight)
 
-  // 5. Load and Center the GLB Model In-Place
+  // 5. Load and Center the GLB Model In-Place (Using Vite BASE_URL for GitHub Pages compatibility)
   const loader = new GLTFLoader()
+  const modelPath = `${import.meta.env.BASE_URL}models/earth_logo.glb`
+
   loader.load(
-    '/models/earth_logo.glb',
+    modelPath,
     (gltf) => {
       modelRoot = gltf.scene
 
       // --- IN-PLACE CENTERING LOGIC ---
-      // Calculate bounding box of the loaded model
       const box = new THREE.Box3().setFromObject(modelRoot)
       const center = box.getCenter(new THREE.Vector3())
       const size = box.getSize(new THREE.Vector3())
 
-      // Keep modelRoot position at (0,0,0) so it rotates in place,
-      // but shift the internal meshes/children so their center aligns with (0,0,0)
       modelRoot.position.set(0, 0, 0)
       modelRoot.traverse((child) => {
         if (child.isMesh) {
-          child.geometry.center() // Centers geometry vertices locally
+          child.geometry.center()
         }
       })
 
-      // Auto-scale to fit nicely inside the 42px circle container
       const maxDim = Math.max(size.x, size.y, size.z)
       const scale = 1.3 / maxDim
       modelRoot.scale.set(scale, scale, scale)
@@ -89,7 +87,6 @@ onMounted(() => {
     const deltaX = e.clientX - previousMousePosition.x
     const deltaY = e.clientY - previousMousePosition.y
 
-    // Calculate rotation delta based on drag displacement
     angularVelocity.y = deltaX * 0.008
     angularVelocity.x = deltaY * 0.008
 
@@ -110,11 +107,9 @@ onMounted(() => {
 
     if (modelRoot) {
       if (isDragging) {
-        // Apply rotation directly from drag velocities
         modelRoot.rotation.y += angularVelocity.y
         modelRoot.rotation.x += angularVelocity.x
       } else {
-        // Smoothly decay extra drag velocity back to default auto-rotate speed
         angularVelocity.y =
           angularVelocity.y * DAMPING_FACTOR + AUTO_ROTATE_SPEED * (1 - DAMPING_FACTOR)
         angularVelocity.x = angularVelocity.x * DAMPING_FACTOR
