@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import TransactionFilterBar from '@/components/common/TransactionFilterBar.vue'
 import TransactionTable from '@/components/common/TransactionTable.vue'
+import SpendingChart from '@/components/common/SpendingChart.vue'
 
 const props = defineProps({
   accountType: {
@@ -58,21 +59,9 @@ const formatCurrency = (val) => {
         <TransactionTable :transactions="transactions" :initialBalance="initialBalance" />
       </div>
 
-      <!-- Right Column: Future Chart / Analytics Placeholder -->
+      <!-- Right Column: Interactive Spending Chart -->
       <div class="chart-column">
-        <div class="chart-placeholder-card">
-          <div class="chart-header">
-            <h3>Spending Analytics</h3>
-            <span class="badge">Coming Soon</span>
-          </div>
-          <p class="chart-desc">
-            Interactive cash flow and category breakdown charts will be integrated here alongside
-            your transaction log.
-          </p>
-          <div class="chart-mockup-visual">
-            <span class="mockup-icon">📊</span>
-          </div>
-        </div>
+        <SpendingChart :transactions="transactions" />
       </div>
     </div>
   </div>
