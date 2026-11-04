@@ -4,25 +4,28 @@ import { reactive, watch } from 'vue'
 const emit = defineEmits(['update:projection'])
 
 const form = reactive({
-  startingAmount: 10000,
+  startingAmount: 37000,
   years: 10,
   annualRate: 6,
-  compoundingFrequency: 12,
-  contributionAmount: 500,
-  contributionFrequency: 12,
-  contributionTiming: 'end',
+  compoundingFrequency: 1, // 1 = Annually, 2 = Semi-Annually, 12 = Monthly
+  contributionAmount: 580,
+  contributionFrequency: 12, // 12 = Monthly, 1 = Annually
+  contributionTiming: 'end', // 'start' or 'end'
 })
 
 const calculateProjection = () => {
   const years = Math.max(1, Math.min(form.years, 40))
   const totalMonths = years * 12
   const annualRateDecimal = (form.annualRate || 0) / 100
-  const m = form.compoundingFrequency
+  const m = form.compoundingFrequency // 1, 2, or 12
   const pmt = form.contributionAmount || 0
 
   let currentBalance = form.startingAmount || 0
   let cumulativeContributions = 0
   const startingAmountFixed = form.startingAmount || 0
+
+  // Effective monthly rate conversion for precise compounding across frequencies
+  const monthlyRate = Math.pow(1 + annualRateDecimal / m, m / 12) - 1
 
   const xAxis = []
   const startingAmountSeries = []
@@ -38,18 +41,16 @@ const calculateProjection = () => {
       cumulativeContributions += pmt
     }
 
-    const compoundInterval = 12 / m
-    if (month % compoundInterval === 0) {
-      const ratePerPeriod = annualRateDecimal / m
-      const interestEarned = currentBalance * ratePerPeriod
-      currentBalance += interestEarned
-    }
+    // Accrue interest monthly using effective compounding rate
+    const interestThisMonth = currentBalance * monthlyRate
+    currentBalance += interestThisMonth
 
     if (isContributionMonth && form.contributionTiming === 'end') {
       currentBalance += pmt
       cumulativeContributions += pmt
     }
 
+    // Record annual snapshot at the end of each year (every 12 months)
     if (month % 12 === 0) {
       const yearIndex = month / 12
       const currentInterest = Math.max(
@@ -64,14 +65,18 @@ const calculateProjection = () => {
     }
   }
 
+  const totalContributionsVal = cumulativeContributions
+  const totalInterestVal = Math.max(0, currentBalance - startingAmountFixed - totalContributionsVal)
+
   emit('update:projection', {
     xAxis,
     startingAmountSeries,
     contributionsSeries,
     interestSeries,
     finalBalance: currentBalance,
-    totalContributions: cumulativeContributions + startingAmountFixed,
-    totalInterest: Math.max(0, currentBalance - startingAmountFixed - cumulativeContributions),
+    startingAmount: startingAmountFixed,
+    totalContributions: totalContributionsVal,
+    totalInterest: totalInterestVal,
   })
 }
 
