@@ -49,9 +49,7 @@ const formatCurrency = (val) => {
             </div>
             <div class="metric-box">
               <span class="label">Interest Earned</span>
-              <span class="value green-text">{{
-                formatCurrency(projectionData.totalInterest)
-              }}</span>
+              <span class="value red-text">{{ formatCurrency(projectionData.totalInterest) }}</span>
             </div>
           </div>
 
@@ -141,8 +139,8 @@ const formatCurrency = (val) => {
 }
 
 .metric-box.highlight {
-  background: #fef2f2;
-  border-color: #fecaca;
+  background: #f8fafc;
+  border-color: #e2e8f0;
 }
 
 .metric-box .label {
@@ -156,14 +154,14 @@ const formatCurrency = (val) => {
 .metric-box .value {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #1d9f2e;
 }
 
 .metric-box.highlight .value {
-  color: #9f1d35;
+  color: #0f172a;
 }
 
-.green-text {
-  color: #16a34a !important;
+.red-text {
+  color: #9f1d35 !important;
 }
 </style>
